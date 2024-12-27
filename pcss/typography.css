@@ -1,0 +1,41 @@
+/* Typogreaphy Styles
+====================*/
+
+html {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 300;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1rem;
+    max-width: 60ch;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 440px) {
+    h1 {
+        font-size: 2rem;
+    }
+}
