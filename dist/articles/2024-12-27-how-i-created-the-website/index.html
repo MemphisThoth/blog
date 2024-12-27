@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How I Created this Website : Webcentric Nexus</title>
+    <link rel="stylesheet" href="../../assets/styles/style.css">
+</head>
+<body>
+    <header>
+    <h1>Webcentric Nexus</h1>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+        </ul>
+    </nav>
+</header>
+    <main>
+        <h1>How I Created this Webiste.</h1>
+<p>I made this website with the <a href="https://11ty.dev">11ty</a> static site generator. It is simple to learn if you follow the documentation and tutorial blogs. It is all based on JavaScript using node.js.</p>
+<p>I first started by initializin git. I then started a package.json file. I added the 11ty packages. I modified the package.json file by adding the scripts to build and serve the development environment to demonstrate my work.</p>
+<p>Later, I created the layout templates as html files with the liquid template syntax. I divided the header and footer markup into thier own files so I didn't have to repeat the markup multiple times.</p>
+<p>I then made some dummy posts to tet that it worked. On the home page, I made it loop through the collection of blog posts, and then displayed them as a list.</p>
+<p>Once the site was functioning correctly, I used <a href="https://postcss.org">PostCSS</a> to style the website. PostCSS has some awesome plugins to manipulate css files. I specifically used postcss-import and postcss-preset-env. They concatenated my css files and future proofed them for things like nested styles.</p>
+<p>After making the website responsive, and looking good, I pushed it to github and setup a Netlify account to host it.</p>
+
+    </main>
+    <footer>
+    <p>Copyright &copy; 2025 Jared Perkins</p>
+</footer>
+</body>
+</html>
