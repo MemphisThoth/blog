@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novell Netware : Webcentric Nexus</title>
+    <link rel="stylesheet" href="../../assets/styles/style.css">
+</head>
+<body>
+    <header>
+    <h1>Webcentric Nexus</h1>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+        </ul>
+    </nav>
+</header>
+    <main>
+        <h1>Novell Netware</h1>
+<p>Netware is a network operating system that was really big in the 1980s and 1990s. I think it died out due to the fact that Microsoft Windows Servers had graphical user interfaces similar to their client counterparts.</p>
+<p>Netware used its own IPX/SPX protocols on the network, and then the Internet became big in the mid-1990s, so Netware started offering its services over the TCP/IP protocol suite.</p>
+<p>Netware had its own directory service, Novell Directory Services, before Microsoft's Active Directory.</p>
+<p>I bought two books that came with a 3-user demo copy of Netware version 5 back in the late 1990s. Netware 5.x made the switch to TCP/IP. Many of its new services ran on IP.</p>
+<p>You can get a copy of Netware from <a href="https://winworldpc.com/product/netware/5x">WinWorld</a>. I use it with <a href="https://www.virtualbox.org">VirtualBox</a> which has settings for Netware. Another site, <a href="https://www.zx.net.nz/netware">www.zx.net.nz</a>, has great documentation and software for Netware.</p>
+<h2>Installing Netware</h2>
+<p>First, download Netware from <a href="https://winworldpc.com/product/netware/5x">WinWorld</a>. I am using Netware 5.1.</p>
+<p>Second, in VirtualBox, give it a name, change the type to Other, and version to Netware. Give it 512MB of ram, and one cpu. Then give the virtual machine 4GB of storage.</p>
+<p>Then, power up the virtual machine, and start the install.</p>
+<p>Next, accept the license agreement, and hit enter.</p>
+<p>Create a new DOS boot partition. I give it 256MB. Then continue. You will have to reboot the system to continue. It will format the partition and boot into the installer program.</p>
+<p>Tap the Enter key to switch from a server upgrade to &quot;New Server&quot;. Press Tab to continue.</p>
+<p>Next, accept the settings and continue.</p>
+<p>Accept or modify the locale settings, and continue.</p>
+<p>The mouse type should be PS/2, and Video should be Super VGA. Tap the Enter key to continue.</p>
+<p>The installer will copy some files to get you started. It should find the storage adapters. Please continue.</p>
+<p>Choose the CNEAMD.LAN for your network interface card.</p>
+<p>It will then ask you to confirm the driver settings. Please hit enter to continue.</p>
+<p>Choose the defaults when it asks for the Sys Volume size.</p>
+<p>It will then mount the installation CD-ROM in Netware. The file copy will start.</p>
+<p>You will boot into the GUI, and the installer wizard will start.</p>
+<p>Give the server a name, and continue.</p>
+<p>Choose the IP protocol, and give the server an IP address, sbunet mask, and default gateway address. You don't need the IPX protocol unless you are supporting older Netware servers and clients. Hit the next button.</p>
+<p>Next, give the server a host name and domain name. Give it your DNS addresses. It's okay if you don't have these settings, but it will complain saying the products you install may rely on DNS.</p>
+<p>Then choose your time zone.</p>
+<p>Under NDS, choose a new NDS Tree. On the next screen, enter a tree name, and under context, I use the button to open the dialog. Under the root, press the Add button and give your container an organization name. Press okay to get back to the NDS menu. Choose an admin name and password. Hit next. It will install NDS.</p>
+<p>Press the next button, and it will bring you to the license menu. Hit the button next to the license location. When the dialog opens, navigate to NW51. Press the switch to open the license folder, and open it to reveal the demo folder. In the wiindow on the right, choose the license file. Hit next, and you're brought back to the license menu. Press next.</p>
+<p>The products menu will appear. Choose the setting you desire, and hit next.</p>
+<p>Choose the name of the server certificate files. Hit next.</p>
+<p>It will show you some server addresses to manage it via a web browser. Hit next, and then hit next again.</p>
+<p>The installer will show you the list of products you selected to install. Choose finish. The file copy will begin.</p>
+<p>Next, remove the CD-ROM, and reboot the virtual machine.</p>
+<h2>Installing the Netware client</h2>
+<p>Of course, you need clients to make a server useful. At <a href="https://www.zx.net/netware">ZXnet</a> you will find client software for a bunch of operating systems and versions.</p>
+<h2>Netware Documentation</h2>
+<p>If you need to know how to administer Netware, I recommend <a href="https://archive.org/search?query=netware">Internet Archive</a>.</p>
+<h2>Conclusion</h2>
+<p>I think Netware is a terrific operating system, and you can learn a lot from it.</p>
+
+    </main>
+    <footer>
+    <p>Copyright &copy; 2025 Jared Perkins</p>
+</footer>
+</body>
+</html>
