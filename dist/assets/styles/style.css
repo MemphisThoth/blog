@@ -175,3 +175,29 @@ body {
 .error-page-wrap {
     text-align: center;
 }
+
+/* Animated gradient bar */
+
+.seperator-wrapper {
+    width: 100%;
+}
+
+.seperator-wrapper .seperator {
+    width: 3000px;
+    height: 5px;
+    animation: rotate 3s infinite linear;
+}
+
+@keyframes rotate {
+    from {
+        background-position: -3000px;
+    }
+    to {
+        background-position: 0;
+    }
+}
+
+.gradient {
+    background: #30ff90;
+    background: linear-gradient(to left, #300ff90 0%, #2ed2ded 25%, #c99826 50%, #30ffe6 75%, #30ff90 100%);
+}
