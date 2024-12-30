@@ -5,3 +5,9 @@ body {
     background-color: var(--color-bg);
     color: var(--color-text);
 }
+
+/* error page styles */
+
+.error-page-wrap {
+    text-align: center;
+}

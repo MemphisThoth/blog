@@ -169,3 +169,9 @@ body {
     color: #003049;
     color: var(--color-text);
 }
+
+/* error page styles */
+
+.error-page-wrap {
+    text-align: center;
+}
